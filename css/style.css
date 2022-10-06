@@ -118,9 +118,6 @@
   display: flex;
   align-items: center;
 }
-.header .link-current{
-display: block;
-}
 
 .accent{
   font-family: 'Raleway', sans-serif;
@@ -173,7 +170,6 @@ color: #212121;
     fill:#2196F3;
   }
 
-
   .header .header-link,
   .header .header-contact{
     font-weight: 500;
@@ -189,15 +185,22 @@ color: #212121;
   padding-top: 32px;
   padding-bottom: 31px;
   color: var(--title-font-color);
-  
 }
-.link-current::after{
+.header-item .current{
+  position: relative;
+  color: var(--title-font-color);
+  display: block;
 
-  
+}
+ .header-link .current::after{
+  content:"";
+  position: absolute;
+  display: block;
   height: 4px;
+  width: 100%;
   background-color: #2196F3;
-  border-radius: 4px;
-  content: ;
+  border-radius: 2px;
+  bottom: 0px;
 } 
 
 
