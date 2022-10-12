@@ -187,13 +187,12 @@ color: #212121;
   padding-bottom: 31px;
   color: var(--title-font-color);
 }
-.header-item .current{
+.header-item{
   position: relative;
   color: var(--title-font-color);
   display: block;
 
-}
- .header-link .current::after{
+}.link-current::after{
   content:"";
   position: absolute;
   display: block;
@@ -201,9 +200,9 @@ color: #212121;
   width: 100%;
   background-color: #2196F3;
   border-radius: 2px;
-  bottom: 0px;
+  bottom: -20px;
 } 
-
+ 
 .header-contact{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -553,7 +552,6 @@ bottom: 0px;
   position: absolute;
   display: block;
   align-items: center;
-  background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 100%;
   top: 0;
@@ -576,7 +574,6 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 background-color: rgba(33, 150, 243, 0.9);
 padding: 63px 24px;
-
 }
 
   .gallery-link{
