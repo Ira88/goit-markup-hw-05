@@ -547,12 +547,13 @@ bottom: 0px;
     position: relative;
     overflow: hidden;
   }
-.gellery-overlay{
+.gellery-overlay ::before{
   content: "";
   position: absolute;
   display: flex;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 0 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
