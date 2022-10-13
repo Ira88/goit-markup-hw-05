@@ -9,6 +9,7 @@
      rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css"/>
   />
 </head>
@@ -18,9 +19,9 @@
         <nav class="header-nav">
             <a class="header-logo titel" href="index.html"><span class="accent">Web</span>Studio</a>
             <ul class="header-list list flex-container">
-                <li class="header-item"><a class="link-current" href="index.html" class="header-link link">Студія</a></li>
-                <li class="header-item"><a class="link-current" href="portfolio.html" class="header-link link">Портфоліо</a></li>
-                <li class="header-item"><a class="link-current" href="" class="header-link link">Контакти</a></li>
+                <li class="header-item"><a class="link-current page" href="index.html" class="header-link link">Студія</a></li>
+                <li class="header-item"><a class="link-current page" href="portfolio.html" class="header-link link">Портфоліо</a></li>
+                <li class="header-item"><a class="link-current page" href="" class="header-link link">Контакти</a></li>
             </ul>
         </nav>
         <div class="container flex-container">
@@ -219,5 +220,9 @@
         </div>
         </div>
        </footer>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
 </body>
 </html>
