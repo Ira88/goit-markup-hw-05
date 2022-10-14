@@ -109,8 +109,6 @@
 .header-nav{
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   column-gap: 93px;
 }
 .flex-container{
@@ -143,7 +141,6 @@
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 0;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #212121;
@@ -183,28 +180,32 @@ color: #212121;
 
 .header .header-link{
   display: block;
-  padding-top: 32px;
-  padding-bottom: 31px;
   color: var(--title-font-color);
 }
 .link-current{
-  position: relative;
-  color: var(--title-font-color);
   display: block;
-
-}.page::after{
+  padding: 32px 0;
+}
+.link-current.active{
+  position: relative;
+}
+.link-current.act{
+  position: relative;
+}
+.link-current.action{
+  position: relative;
+}
+.page::after{
   content:"";
   position: absolute;
-  display: block;
+  display:block;
   height: 4px;
   width: 100%;
   background-color: #2196F3;
   border-radius: 2px;
-  bottom: -20px;
+  bottom: 0;
 } 
 
-
- 
 .header-contact{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -557,13 +558,12 @@ bottom: 0px;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover .gellery-overlay
 .gallery-link:focus .gellery-overlay{
-opacity: 1;
+  transform: translateY(0);
 }
 .gellery-overlay-text{
   font-family: 'Roboto';
