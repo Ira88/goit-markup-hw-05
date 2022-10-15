@@ -189,13 +189,8 @@ color: #212121;
 .link-current.active{
   position: relative;
 }
-.link-current.act{
-  position: relative;
-}
-.link-current.action{
-  position: relative;
-}
-.page::after{
+
+.link-current::after{
   content:"";
   position: absolute;
   display:block;
@@ -204,7 +199,9 @@ color: #212121;
   background-color: #2196F3;
   border-radius: 2px;
   bottom: 0;
-} 
+ } 
+
+
 
 .header-contact{
   font-family: 'Roboto', sans-serif;
