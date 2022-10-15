@@ -162,10 +162,12 @@ color: #212121;
   .link-current:hover, 
   .link-current:focus{
     color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }  
   .link-current:hover svg, 
   .link-current:focus svg{
     fill:#2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header .header-link,
@@ -181,6 +183,7 @@ color: #212121;
 .header .header-link{
   display: block;
   color: var(--title-font-color);
+  
 }
 .link-current{
   display: block;
@@ -300,7 +303,9 @@ height: 50px;
 .link-current-hero:hover, 
 .link-current-hero:focus{
   color: #FFFFFF;
-  background: #2196F3;
+  background-color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
 
@@ -329,7 +334,9 @@ height: 50px;
   .link-current-port:hover, 
   .link-current-port:focus{
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
     
@@ -439,8 +446,8 @@ bottom: 0px;
     background-color: #F5F4FA;
     width: 1600px;
     height: 708px;
-  padding: 0;
-  margin: auto;
+    padding: 0;
+    margin: auto;
   }
   .comand-container{
     width: 1170px;
@@ -513,11 +520,15 @@ bottom: 0px;
   .social-link:focus{
     color: #fff;
     background-color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-link:hover svg, 
   .social-link:focus svg{
     fill: #fff;
     background-color: #2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .visually-hidden{
     font-family: 'Roboto', sans-serif;
@@ -558,7 +569,7 @@ bottom: 0px;
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover .gellery-overlay{
   transform: translateY(0);
@@ -580,6 +591,7 @@ bottom: 0px;
   .gallery-link:focus, 
   .gallery-link:hover{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .galary-wrapper{
     padding: 20px 24px;
@@ -637,10 +649,11 @@ justify-content: center;
 }
 .icon-client:hover, .icon-client:focus{
   border: 1px solid #2196F3;
-  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 .icon-client:hover svg, .icon-client:focus svg{
     fill: #2196F3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 .svg-client{
   width: 106px;
@@ -710,6 +723,7 @@ justify-content: center;
 }
 .current-footer:hover,.current-footer:focus{
   color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .footer-wrapper{
   display: flex;
@@ -761,6 +775,7 @@ padding-bottom: 20px;
 .footer-social-link:hover,
 .footer-social-link:focus{
   background-color: #2196F3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
   
