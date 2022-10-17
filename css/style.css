@@ -819,6 +819,10 @@ left: 0;
   height: 30px;
   border-radius: 50%;
   fill: #000000;
+  cursor: pointer;
+}
+.close-button :hover{
+fill: #2196F3;
 }
 .is-hidden{
   opacity: 0;
