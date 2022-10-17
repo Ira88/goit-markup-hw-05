@@ -203,6 +203,20 @@ color: #212121;
   border-radius: 2px;
   bottom: 0;
  } 
+ .link-current.action{
+  position: relative;
+}
+
+.klik::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 4px;
+  width: 100%;
+  background-color: #2196F3;
+  border-radius: 2px;
+  bottom: 0;
+ } 
 
 
 
