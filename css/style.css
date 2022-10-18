@@ -88,14 +88,35 @@
 /* Заголовок */
 
 .header{
+  border-bottom: 1px solid #ECECEC;
   display: flex;
   align-items: center;
   column-gap: 50px;
-  margin-left: auto;
-  border-bottom: 1px solid var(--header-border-color);
+ margin-left: auto;
+ margin-right: auto;
+ width: 1600px;
 }
-
-.header-logo{
+.header-nav{
+  display: flex;
+  align-items: center;
+  column-gap: 93px;
+  margin-left: auto;
+}
+.flex-container{
+ width: 1200px; 
+  column-gap: 93px;
+  display: flex;
+  align-items: center;
+}
+.header-list{
+  padding-right: 344px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  width: 286px;
+}
+ .header-logo{
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -106,16 +127,34 @@
   text-decoration: none;
 
 }
-.header-nav{
+.header-contacts .flex-container{
   display: flex;
-  align-items: center;
-  column-gap: 93px;
+  column-gap: 30px;
+  padding-left: 318px;
+  
 }
-.flex-container{
- width: 1200px; 
-  column-gap: 93px;
-  display: flex;
-  align-items: center;
+.contact-icon {
+
+}
+
+.header-contact{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+ .icon-smartphone {
+  width: 10px;
+  height: 16px;
+  color: #757575;
+  
+}
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  color: #757575;
 }
 
 .accent{
@@ -128,14 +167,7 @@
  color: #2196F3;
   
 }
-.header-list{
-  padding-right: 344px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  width: 286px;
-}
+
 .header-item{
   font-family: 'Roboto';
 font-style: normal;
@@ -154,7 +186,7 @@ color: #212121;
     text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-  }  
+  } 
 .link-current {
   color: #757575;
   text-decoration: none;
@@ -170,21 +202,6 @@ color: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header .header-link,
-  .header .header-contact{
-    font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  }
-  header.flex-container {
-    column-gap: 93px;
-  }
-
-.header .header-link{
-  display: block;
-  color: var(--title-font-color);
-  
-}
 .link-current{
   display: block;
   padding: 32px 0;
@@ -216,40 +233,7 @@ color: #212121;
   bottom: 0;
  } 
 
-.header-contact{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-  color: var(--secondary-text-color);
-}
-.header .header-contact{
-  color: inherit;
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
-  fill: var(--main-font-color);
-}
-.header .nav-contacts {
-  margin-left: auto;
-  column-gap: 50px;
-}
-.header-contact link{
-  display: flex;
-  margin-left: auto;
-  column-gap: 50px;
-}
- .icon-smartphone {
-  width: 10px;
-  height: 16px;
-  color: #757575;
-}
-.icon-envelope {
-  width: 16px;
-  height: 12px;
-  color: #757575;
-}
+
 
   /* Розділ героя */
   .hero .container{
@@ -293,7 +277,6 @@ font-size: 16px;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 color:  var(--primary-text-color);
-border-radius: 4px;
 width: 216px;
 height: 50px;
 padding: 10px 32px;
@@ -304,16 +287,19 @@ cursor: pointer;
 }
 
 .link-current-hero{
-  color: #212121;
+  color: #fff;
 text-decoration: none;
 width: 216px;
 height: 50px;
+background-color: #2196F3;
+border: none;
+border-radius: 4px;
   }
 
 .link-current-hero:hover, 
 .link-current-hero:focus{
   color: #FFFFFF;
-  background-color: #2196F3;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -328,7 +314,7 @@ height: 50px;
     display: flex;
   column-gap: 8px;
   margin-left: 400px;
-
+  padding-top: 94px;
   }
   .link-current-port{
     color: #212121;
@@ -610,7 +596,7 @@ bottom: 0px;
     border-radius: 0px 0px 4px 4px;
   }
   .gallery-list{
-    padding-top: 94px;
+    padding-top: 32px;
     padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
@@ -800,6 +786,7 @@ top:0;
 left: 0;
 }
 .modal{
+  padding: 40px ;
   width: 528px;
   height: 581px;
   position: absolute;
