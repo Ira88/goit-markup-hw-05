@@ -426,7 +426,26 @@
             </svg>
             </a>
         </button>
-        <p>Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal-titel">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="" class="modal-form">
+            <div class="form-element">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name"/>
+            </div>
+            <div class="form-element">
+                <label for="tel">Телефон</label>
+                <input type="tel" id="tel" name="tel"/>
+            </div>
+            <div class="form-element">
+                <label for="email">Пошта</label>
+                <input type="email" id="email" name="email"/>
+            </div>
+            <div class="form-element">
+                <label for="name">Коментар</label>
+                <textarea name="" id="" cols="30" rows="10"placeholder="Введіть текст"></textarea>
+            </div>
+            <button type="submit">Відправити</button>
+        </form>
     </div>
    </div>
    <script src="./js/modal.js"></script>
