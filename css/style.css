@@ -834,6 +834,8 @@ fill: #2196F3;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-titel{
+  font-family: 'Roboto';
+  font-style: normal;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -846,10 +848,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-element{
   display: flex;
   flex-direction: column;
-  margin-bottom: 4px;
+  margin-top: 12px;
 }
 .form-element label{
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .label{
   font-weight: 400;
@@ -872,6 +874,46 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-element input :hover{
   border: 1px solid #2196F3;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.coment{
+  width: 448px;
+  height: 120px;
+  outline: none;
+  resize: none;
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.text-form{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+
+}
+.topic-text{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.accent-modal{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+color: #2196F3;
 }
 .modal-btn{
  width: 200px;
